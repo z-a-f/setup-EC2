@@ -7,7 +7,7 @@ RAWDIR=${PWD}
 # https://github.com/creationix/nvm
 sudo apt-get install -y git
 sudo apt-get install -y curl
-curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+curl https://raw.githubusercontent.com/creationix/nvm/v0.7.0/install.sh | sh
 
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
@@ -17,6 +17,10 @@ nvm use v0.10.12
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
 npm install -g jshint
+
+# Install cheerio and commander:
+npm install cheerio
+npm install commander
 
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
